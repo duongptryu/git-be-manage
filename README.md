@@ -11,7 +11,9 @@ yarn or yarn install
 ### 3. Initialize Prisma Database
 
 ```bash
-npx prisma migrate dev --name generate-db
+prisma generate
+
+prisma db push
 ```
 
 ### 4. Run server

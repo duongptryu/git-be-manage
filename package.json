@@ -7,7 +7,7 @@
     "start": "nodemon ./src/index.js",
     "lint": "eslint --cache --ext .js ./src"
   },
-    "devDependencies": {
+  "devDependencies": {
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
     "bcryptjs": "^2.4.3",
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@prisma/client": "^3.14.0",
-    "multer": "^1.4.4",
+    "multer": "^1.4.5-lts.1",
     "prisma": "^3.14.0"
   }
 }
