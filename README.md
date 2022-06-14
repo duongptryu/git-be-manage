@@ -19,3 +19,7 @@ npx prisma migrate dev --name generate-db
 ```bash
 yarn start
 ```
+
+# Full Project Can Be Found Here
+
+[Git Management](https://github.com/ad0x99/git-management)
