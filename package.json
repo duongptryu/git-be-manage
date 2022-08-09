@@ -25,12 +25,12 @@
     "nodemailer": "^6.7.5",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
+    "prisma": "^3.15.2",
     "winston": "^3.7.2",
     "winston-daily-rotate-file": "^4.6.1"
   },
   "dependencies": {
-    "@prisma/client": "^3.14.0",
-    "multer": "^1.4.5-lts.1",
-    "prisma": "^3.14.0"
+    "@prisma/client": "^3.15.2",
+    "multer": "^1.4.5-lts.1"
   }
 }

@@ -6,6 +6,10 @@ const fs = require("fs");
 const { models } = require("./db");
 const { logger } = require("./helpers/logger");
 
+const { userRouters } = require("./routes/user.route");
+
+const prefixApi = "/api/v1";
+
 const main = async () => {
   const app = express();
 
@@ -17,7 +21,7 @@ const main = async () => {
   app.use(express.json());
 
   // APIs Routes
-  // app.use('/api/v1');
+  app.use(prefixApi + "/user", userRouters);
 
   // Server & Database
   app.listen(process.env.NODE_PORT, async () => {
