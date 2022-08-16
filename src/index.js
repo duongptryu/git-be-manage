@@ -7,6 +7,7 @@ const { models } = require("./db");
 const { logger } = require("./helpers/logger");
 
 const { userRouters } = require("./routes/user.route");
+const { authRoute } = require("./routes/auth.route");
 
 const prefixApi = "/api/v1";
 
@@ -22,6 +23,7 @@ const main = async () => {
 
   // APIs Routes
   app.use(prefixApi + "/user", userRouters);
+  app.use(prefixApi + "/auth", authRoute);
 
   // Server & Database
   app.listen(process.env.NODE_PORT, async () => {
