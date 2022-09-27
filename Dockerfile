@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:18-alpine
+FROM --platform=linux/amd64 node:16-alpine
 RUN apt-get update
 RUN apt-get install -y openssl
 RUN mkdir -p /home/node/app/node_modules
