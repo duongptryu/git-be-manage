@@ -22,7 +22,7 @@ const main = async () => {
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.send("Hello World");
+    res.send("Hello World 123s");
   });
 
   // APIs Routes
