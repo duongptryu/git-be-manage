@@ -21,6 +21,10 @@ const main = async () => {
   app.use(cors());
   app.use(express.json());
 
+  app.get("/", function (req, res) {
+    res.send("Hello World");
+  });
+
   // APIs Routes
   app.use(prefixApi + "/user", userRouters);
   app.use(prefixApi + "/auth", authRoute);
